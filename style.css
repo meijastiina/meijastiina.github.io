@@ -19,6 +19,7 @@ header{
 	width: 100px;
 	height: 100px;
 	margin: 0 20px 0 20px;
+	background: #d6d6d8;
 	border: 1px solid black !important;
 }
 .placeholder-img.large {
