@@ -7,3 +7,28 @@ a:link {
 a:hover {
 	color: yellow;
 }	
+.bg-img {
+	background-image: url('balloon.jpg');
+	height: 300px;
+	text-align: center;
+	background-size: cover;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: table;
+	width: 100%;
+}
+.bg-img div {
+	display: table-cell;
+	vertical-align: middle;
+}
+h1 {
+	font-size: 400%;
+	font-style: italic;
+	transition: all .5s ease;  
+	color: hsl(36,50%,50%);
+}
+h1:hover {
+	color: hsl(36,100%,50%);
+	font-size: 410%;
+}
