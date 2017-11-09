@@ -1,3 +1,0 @@
-<info>
-	<text>Here is some text in the file ajax_example.txt</text>
-</info>
