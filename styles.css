@@ -32,3 +32,18 @@ h1:hover {
 	color: hsl(36,100%,50%);
 	font-size: 410%;
 }
+.shadow-box {
+	width: 500px;
+	height: 200px;
+	-webkit-box-shadow: 0 0 10px 5px #FF7A05;
+	box-shadow: 0 0 10px 5px #FF7A05;
+	margin: 20px;
+	padding: 20px;
+}
+.shadow-text {
+	text-shadow: 1px 1px 1px #FF6803;
+	font-size: 300%;
+	font-style: italic;
+	text-align: center;
+}
+}
