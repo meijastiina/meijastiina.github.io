@@ -46,4 +46,25 @@ h1:hover {
 	font-style: italic;
 	text-align: center;
 }
+td {
+	border: 1px solid;
+	padding: 10px;
+}
+tr:nth-child(even) {
+	background: #f0f0f0;
+}
+tr:last-child {
+	border-bottom: 10px solid;
+}
+table {
+	border-collapse: collapse;
+}
+.horizontal li {
+	display: inline;
+	margin: 20px 20px 20px 0;
+	border-right: 1px solid;
+	padding: 0 20px 0 0;
+}
+.horizontal li:last-child {
+	border-right: none;
 }
