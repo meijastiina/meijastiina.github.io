@@ -1,0 +1,85 @@
+<!doctype html>
+<HTML lang="en">
+    <head>
+        <title>Two Col Layout with Flexbox</title>
+		<meta charset="utf-8">
+        <style>
+            .container {
+                display: flex;
+            }
+            aside {
+                flex-shrink: 0;
+                background: #efefef;
+            }
+            main {
+                flex-grow: 1;  
+                padding: 10px;  
+            }
+            aside ul {
+                padding: 10px;
+                list-style-type: none;
+            }
+        </style>
+    </head>
+	<body>
+        <header>
+            <h1>Two Col Layout with Flexbox</h1>
+        </header>
+        <div class="container">
+            <aside>
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                </ul>
+            </aside>
+            <main>
+                <p>
+                    Here are instructions on as how to create a two col layout with equal height columns with Flexbox. 
+                <p>
+                <p>
+                    Your HTML structure should look like this:
+                </p>
+                <div>
+                    <pre><code>
+                        &ltdiv class="container"&gt
+                            &ltaside&gt&lt/aside&gt
+                            &ltmain&gt&lt/main&gt
+                        &lt/div&gt
+                    </code></pre>
+                </div>
+                <p>
+                    And your CSS should look like this:
+                </p>
+                    <pre><code>
+                        .container {
+                            display: flex;
+                        }
+                        aside {
+                            flex-shrink: 0;
+                        }
+                        main {
+                            flex-grow: 1;  
+                        }
+                    </code></pre>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas elit. Vivamus venenatis sodales purus. Aliquam facilisis sollicitudin sem ut ultrices. Quisque aliquet lectus sed erat ultrices consequat. Curabitur feugiat feugiat turpis vitae ultricies. Praesent dapibus ultrices lobortis. Morbi condimentum ultrices condimentum. Etiam leo enim, suscipit quis cursus sed, dignissim eget eros. Vivamus vel dignissim enim. Proin egestas turpis ut rhoncus sollicitudin. Duis porta lacus eu scelerisque vehicula.
+                </p>
+                <p>
+                    Nunc eu dolor nisi. Fusce viverra eleifend leo, et congue nibh blandit in. Nullam tincidunt, ligula a iaculis ornare, felis quam suscipit tortor, vel pretium enim nibh at ipsum. Duis vitae feugiat nunc, id commodo nisi. Nam gravida eget magna quis dapibus. In vel purus sed justo rutrum imperdiet quis quis urna. Nunc faucibus pretium mi et aliquet.
+                </p>
+                <p>
+                    Proin elementum, massa eget vulputate laoreet, risus dolor dapibus nisl, sit amet posuere mauris tellus nec enim. Fusce quis porttitor quam. Fusce commodo justo at ex mollis malesuada. Integer in dapibus erat. Aliquam consectetur augue ut enim tempus porta. Pellentesque ac tellus felis. Aliquam sit amet lectus a velit tempor vulputate. Vivamus vestibulum sapien tristique elit fringilla, interdum facilisis erat dapibus. Mauris vel arcu quis turpis interdum consequat. In hac habitasse platea dictumst. Nam faucibus, arcu eget luctus porta, leo tellus vehicula risus, tincidunt pharetra lorem augue blandit dui. Curabitur rutrum nulla fermentum quam gravida, sit amet maximus enim pretium.
+                </p>
+                <p>
+                    Fusce euismod dictum arcu vel auctor. Donec vitae mattis nisi. Cras vitae porta tellus. Nulla commodo faucibus enim, ac mollis risus pellentesque et. Sed dapibus metus eu nisi maximus, id tincidunt dolor aliquet. Integer varius auctor tellus, quis scelerisque orci tristique vel. Nam sit amet nisi dui. Morbi interdum risus suscipit, fringilla orci quis, scelerisque eros. In sit amet risus sed nulla pulvinar luctus ut mattis nibh.
+                </p>
+                <p>
+                    Proin in mollis orci. Proin egestas neque ut est accumsan imperdiet. Nam non commodo arcu. Ut vestibulum ac ligula a mollis. Mauris venenatis, turpis sit amet aliquam suscipit, lacus ipsum mattis lectus, vitae placerat enim lorem in ex. Phasellus odio purus, bibendum vel mi at, tristique ornare turpis. Nunc quis eros vel lectus ullamcorper efficitur placerat vel diam. Nam in lacinia nibh.
+                    </p>
+            </main>
+        </div>
+    </body>
+</html>
+
+
+    
