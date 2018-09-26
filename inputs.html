@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Input Example</title>
+        <style>
+            input {
+                margin-left: 10px;
+                margin-right: 50px;
+            }
+            div {
+                border-bottom: 1px solid black;
+                padding-bottom: 10px;
+            }
+        </style>
+	</head>
+	<body>
+        <h2>Buttons</h2>
+        <div>
+            <label>button</label><input type="button">
+            <label>reset</label><input type="reset">
+            <label>submit</label><input type="submit">
+        </div>
+        <h2>Selections</h2>
+        <div>
+            <label>checkbox</label><input type="checkbox">
+            <label>radio</label><input type="radio">
+            <label>range</label><input type="range">
+        </div>
+        <h2>Text</h2>
+        <div>
+            <label>email</label><input type="email">
+            <label>number</label><input type="number">
+            <label>password</label><input type="password">
+            <label>search</label><input type="search">
+            <label>tel</label><input type="tel">
+            <label>text</label><input type="text">
+            <label>url</label><input type="url">
+        </div>
+        <h2>Date</h2>
+        <div>
+            <label>date</label><input type="date">
+            <label>datetime-local</label><input type="datetime-local">
+            <label>month</label><input type="month">
+            <label>time</label><input type="time">
+            <label>week</label><input type="week">
+        </div>
+        <h2>Misc</h2>
+        <div>
+            <label>color</label><input type="color">
+            <label>file</label><input type="file">
+            <label>hidden</label><input type="hidden">
+            <label>image</label><input type="image">
+        </div>
+        <h2>Textarea</h2>
+        <textarea></textarea>
+        <h2>Select</h2>
+        <div>
+            <select>
+                <option>Finnish</option>
+                <option>English</option>
+            </select>
+        </div>
+        <h2>Datalist</h2>
+        <div>
+            <input type="text" name="color" id="color" list="colors">
+            <datalist id="colors">
+                <option value="red">
+                <option value="green">
+                <option value="blue">
+                <option value="yellow">
+                <option value="pink">
+                <option value="black">
+            </datalist>
+        </div>
+        <h2>range</h2>
+        <div>
+            Low <input type="range" name="myChoice" id="myChoice" min="1" max="100"> High
+        </div>
+	</body>
+</html>
