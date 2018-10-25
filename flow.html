@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Element Flow</title>
+        <style>
+            body {
+                padding: 250px;
+            }
+            div.parent, div.child {
+                border: 1px solid black;
+                padding: 20px;
+                margin: 20px;
+            }
+            div.fixed div.fixed {
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            div.fixed {
+                background: #efefef;
+            }
+            div.relative div.relative {
+                position: relative;
+                top: 50px;
+                left: 50px;
+            }
+            div.relative {
+                background: #f7d342;
+            }
+            div.absolute div.absolute {
+                position: absolute;
+                top: 50px;
+                right: 50px;
+            }
+            div.absolute {
+                background: #6fa620;
+            }
+            div.float div.float {
+                float: right;
+            }
+            div.float {
+                background: #f6afce;
+                overflow: auto;
+            }
+        </style>
+	</head>
+	<body>
+        <div class="parent normal">
+            <p>This is a parent element / Normal Flow</p>
+            <div class="child">
+                <p>This is a child element</p>
+                <p>[Normal flow]</p>
+            </div>
+            <div class="child">
+                <p>This is another child element</p>
+                <p>[Normal flow]</p>
+            </div>
+        </div>
+        <div class="parent fixed">
+            <p>This is a parent element / Fixed</p>
+            <div class="child">
+                <p>This is a child element</p>
+                <p>[Normal flow]</p>
+            </div>
+            <div class="child fixed">
+                <p>This is another child element</p>
+                <p>[Fixed]</p>
+            </div>
+        </div>
+        <div class="parent relative">
+            <p>This is a parent element / Relative</p>
+            <div class="child">
+                <p>This is a child element</p>
+                <p>[Normal flow]</p>
+            </div>
+            <div class="child relative">
+                <p>This is another child element</p>
+                <p>[Relative]</p>
+            </div>
+        </div>
+        <div class="parent absolute">
+            <p>This is a parent element / Absolute</p>
+            <div class="child">
+                <p>This is a child element</p>
+                <p>[Normal flow]</p>
+            </div>
+            <div class="child absolute">
+                <p>This is another child element</p>
+                <p>[Absolute]</p>
+            </div>
+        </div>
+        <div class="parent float">
+            <p>This is a parent element / Float</p>
+            <div class="child">
+                <p>This is a child element</p>
+                <p>[Normal flow]</p>
+            </div>
+            <div class="child float">
+                <p>This is another child element</p>
+                <p>[Float]</p>
+            </div>
+        </div>
+	</body>
+</html>
