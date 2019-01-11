@@ -1,0 +1,228 @@
+div {
+    margin: 0 50px;
+    display: inline-block;
+}
+div div {
+    margin: 5px;
+}
+/* colour classes */
+.blue, .heart.blue:before, .heart.blue:after {
+    background-color: #0000ff;
+}
+.triangle.blue.up, .star.blue, .star.blue:before, .star.blue:after {
+    border-bottom-color: #0000ff;
+}
+.star.blue {
+    color: #0000ff;
+}
+.red, .heart.red:before, .heart.red:after {
+    background-color: #ff0000;
+}
+.triangle.red.right {
+    border-left-color: #ff0000;
+}
+.star.red, .star.red:after {
+    color: #ff0000;
+}
+.star.red, .star.red:before, .star.red:after {
+     border-bottom-color: #ff0000;
+}
+.green, .heart.green:before, .heart.green:after {
+    background-color: #00ff00;
+}
+.triangle.green.down {
+    border-top-color: #00ff00;
+}
+.star.green {
+    color: #00ff00;
+}
+.star.green, .star.green:before, .star.green:after {
+    border-bottom-color: #00ff00;
+}
+/* size classes */
+.small {
+    width: 50px;
+    height: 50px;
+}
+.oval.small {
+    width: 100px;
+}
+.triangle.small {
+    border: 50px solid transparent;
+}
+.triangle.small.up {
+    border-bottom-width: 100px;
+}
+.triangle.small.dowm {
+    border-top-width: 100px;
+}
+.triangle.small.right {
+    border-left-width: 100px;
+}
+.star.small {
+    margin: 50px 0;
+    border-right-width: 100px;
+    border-left-width: 100px;
+    border-bottom-width: 70px;
+}
+.star.small:before {
+    border-left-width: 30px;
+    border-right-width: 30px;
+    border-bottom-width: 80px;
+    top: -45px;
+    left: -65px;
+}
+.star.small:after {
+    top: 3px;
+    left: -105px;
+    border-right-width: 100px;
+    border-left-width: 100px;
+    border-bottom-width: 70px;
+}
+.heart.small:before {
+    left: 27px;
+}
+.heart.small:before,
+.heart.small:after {
+    width: 28px;
+    height: 50px;
+}
+.medium {
+    width: 100px;
+    height: 100px;
+}
+.oval.medium {
+    width: 150px;
+}
+.triangle.medium {
+    border: 100px solid transparent;
+}
+.triangle.medium.up {
+    border-bottom-width: 150px;
+}
+.triangle.medium.dowm {
+    border-top-width: 150px;
+}
+.triangle.medium.right {
+    border-left-width: 150px;
+}
+.heart.medium:before {
+    left: 50px;
+}
+.heart.medium:before,
+ .heart.medium:after {
+     width: 50px;
+     height: 80px;
+}
+.large {
+    width: 150px;
+    height: 150px;
+}
+.oval.large {
+    width: 200px;
+}
+.triangle.large {
+    border: 150px solid transparent;
+}
+.triangle.large.up {
+    border-bottom-width: 200px;
+}
+.triangle.large.dowm {
+    border-top-width: 200px;
+}
+.triangle.large.right {
+    border-left-width: 200px;
+}
+.heart.large:before {
+    left: 73px;
+}
+.heart.large:before,
+.heart.large:after {
+    width: 74px;
+    height: 114px;
+}
+/* shape classes */
+.square {
+}
+.circle {
+    border-radius: 50%;
+}
+.oval {
+    border-radius: 100px / 50px;
+}
+.oval.medium {
+    border-radius: 150px / 100px;
+}
+.oval.large {
+    border-radius: 200px / 150px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+.triangle.down {}
+.triangle.right.red {
+    border-righ-color: #ff0000;
+}
+.triangle.right {}
+.star {
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-bottom-style: solid;
+    transform: rotate(35deg);
+    background-color: transparent;
+}
+.star:before {
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    height: 0;
+    width: 0;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+.star:after {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-bottom-style: solid;
+    transform: rotate(-70deg);
+    content: '';
+}
+.heart {
+    position: relative;
+    background: transparent;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    bottom: 0;
+    width: 50px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
