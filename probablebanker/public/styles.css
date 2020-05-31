@@ -1,0 +1,476 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background: url(img/main_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+    color:rgb(255,204,0);
+}
+h1{
+    text-align: center;
+}
+table {
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid white;
+    padding: 5px;
+}
+.tac {
+    text-align: center;
+}
+.tar {
+    text-align: right;
+}
+.float-left {
+    float: left;
+}
+span.tar {
+    float: right;
+}
+.padding {
+    padding: 10px;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.hidden {
+    display: none;
+}
+.full-width-link {
+    display: inline-block;
+    width: 100%;
+}
+.no-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+}
+ul {
+    padding-left: 0;
+    background: darkgreen;
+    padding: 5px;
+}
+.logo {
+    max-width: 100%;
+}
+/* Containers */
+
+.container {
+    flex: 1 0 auto;
+}
+footer {
+    text-align: center;
+    flex-shrink: 0;
+    padding: 10px;
+}
+/* Leagues */
+.leagues li {
+    display: inline;
+    margin: 5px;
+}
+li.league a {
+    min-height: 20px;
+    line-height: 20px;
+    padding-left: 35px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+li.league.EN1 a {
+    background-image: url(img/vector/flags/en.svg);
+}
+li.league.EN2 a {
+    background-image: url(img/vector/flags/en.svg) ;
+}
+
+li.league.EN3 a {
+    background-image: url(img/vector/flags/en.svg) ;
+}
+
+li.league.DE a {
+    background-image: url(img/vector/flags/de.svg) ;
+}
+
+li.league.IT a {
+    background-image: url(img/vector/flags/it.svg) ;
+}
+
+li.league.ES a {
+    background-image: url(img/vector/flags/es.svg) ;
+}
+
+li.league.FR a {
+    background-image: url(img/vector/flags/fr.svg) ;
+}
+
+li.league.NL a {
+    background-image: url(img/vector/flags/nl.svg) ;
+}
+li.league.PT a {
+    background-image: url(img/vector/flags/pt.svg) ;
+}
+li.league.BR a {
+    background-image: url(img/vector/flags/br.svg) ;
+}
+li.league.US a {
+    background-image: url(img/vector/flags/us.svg) ;
+}
+li.league a, .upcoming-link {
+    opacity: 0.5;
+}
+li.league a:hover, .upcoming-link:hover {
+    opacity: 0.7;
+}
+li.league a.active, .upcoming-link.active {
+    opacity: 1;
+    font-weight: bold;
+}
+.league a, .upcoming-link {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+.league a:visited {
+    color: white;
+}
+.league img {
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+/* Grid */
+.row {
+    width: 100%;
+    float: left;
+}
+.col {
+    padding: 5px;
+    float: left;
+}
+/* Col widths */
+.half {
+    width: 50%;
+}
+.one-third {
+    width: 33%;
+}
+.two-third {
+    width: 66%;
+}
+.one-fourth {
+    width: 25%;
+}
+.col-1 {
+    width: 16.66%;
+}
+.col-2 {
+    width: 33.33%;
+}
+.col-3 {
+    width: 50%;
+}
+.col-4 {
+    width: 66.5%;
+}
+.col-5 {
+    width: 83.3%;
+}
+.col-6 {
+    width: 100%;
+}
+.one-third {
+    width: 33%;
+}
+.header .oddsblock:nth-of-type(2) {
+    width: 34%;
+}
+.colSub {
+    font-size: 100%;
+    color: rgb(36, 32, 32);
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.colTextBackground { 
+    opacity: 0.85    ;
+}
+.colBackground { 
+    opacity: 0.85;
+}
+.oddsblock {
+    display: inline-block;
+}
+/* Games */
+.games {
+    width: 100%;
+    float: left;
+}
+.game.row:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+div.info div:hover, .game.row.header:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+.upcoming-link {
+    margin: 10px;
+}
+.oddsblock {
+    background: #595959;
+    box-sizing: border-box;
+    border: 1px solid black;
+    float: left;
+    padding: 0 10px;
+    margin: 5px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.oddssubblock {
+    background: #595959;
+    box-sizing: border-box;
+    border: 0px solid black;
+    float: left;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.oddssubblockempty {
+    background: #797777;
+    box-sizing: border-box;
+    border: 0px solid black;
+    float: left;
+    overflow: hidden; 
+    white-space: nowrap;
+    width: 100%;
+    color: rgb(36, 32, 32);
+    font-weight: bold;
+}
+.oddssubblockmpptxt {
+    box-sizing: border-box;
+    border: 0px solid black;
+    float: left;
+    overflow: hidden; 
+    white-space: nowrap;
+    width: 100%;
+    padding: 0 10px;
+    color: gainsboro;
+    font-weight: bold;
+}
+.oddssubblock span {
+    padding: 0 10px;
+}
+/* Block colours */
+.info {
+    background: darkgreen;
+    float: left;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background: green;
+    width: 100%;
+    float: left;
+    z-index: 99;
+}
+.header .oddsblock {
+    background: darkgreen;
+    border: none;
+}
+.oddsblock.highest, .oddsblock.oneOfHighest {
+    background: #EAEA44;
+    color: #000000;
+    font-weight: bold;
+}
+.oddsblock.oneOfHighest {
+    background: #e9ba1e;
+}
+.oddsblock.correctGuess {
+    background: #328736;
+    color: #000000;
+    font-weight: bold;
+}
+.oddsblock.oneOfCorrect {
+    background: #2c64fe;
+    color: #000000;
+    font-weight: bold;
+}
+.oddsblock.inCorrectGuess {
+    background: #d91717;
+    color: #000000;
+    font-weight: bold;
+}
+.oddsblock.okGuess {
+    background: #2c64fe;
+    color: #000000;
+    font-weight: bold;
+}
+.oddssubblock.basicHome {
+    background: #595959;
+    color: #000000;
+}
+.oddssubblock.basicDraw {
+    background: #797777;
+    color: #000000;
+}
+.oddssubblock.basicAway {
+    background: #595959;
+    color: #000000;
+}
+.oddssubblock.basicHomeHighest {
+    background: #595959;
+    color: #000000;
+    font-weight: bold;
+}
+.oddssubblock.basicDrawHighest {
+    background: #797777;
+    color: #000000;
+    font-weight: bold;
+}
+.oddssubblock.basicAwayHighest {
+    background: #595959;
+    color: #000000;
+    font-weight: bold;
+}
+/* Transition */
+.slide-enter-active, .slide-leave-active  {
+    transition: all .10s;
+}
+.slide-enter, .slide-leave-to
+{
+    transform: translateY(0);
+    opacity: 0;
+}
+.fade-enter{
+    opacity: 0;
+}
+.fade-enter-active{
+    transition: opacity 1s;
+}
+.fade-leave-active{
+    transition: opacity .1s;
+    opacity: 0;
+}
+/* Icons */
+.icon {
+    background-size: 25px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+div.icon {
+    background-position-x: center;
+    min-height: 25px;
+    line-height: 1em;
+}
+.icon.icon-left {
+    background-position-x: 10px;
+    padding-left: 3em;
+}
+div.icon.icon-left {
+    float: left;
+}
+.icon.icon-right {
+    background-position: right 5px center;
+    padding-right: 3em;
+}
+div.icon.tac {
+    background-position: left;
+    padding-left: 25px;
+}
+.injury_changes_fav {
+    background-image: url(img/injury_changes_favorite.png);
+}
+.injury_too_big {
+    background-image: url(img/injury_too_big.png);
+}
+.burden_too_big {
+    background-image: url(img/burden_too_big.png);
+}
+.full_safe_style_pair {
+    background-image: url(img/full_safe_style_pair.png);
+}
+.full_safe_style_pair {
+    background-image: url(img/full_safe_style_pair.png);
+}
+.style_based_h2h {
+    background-image: url(img/style_based_h2h.png);
+}
+.streak_too_long {
+    background-image: url(img/streak_too_long.png);
+}
+.draw_too_close {
+    background-image: url(img/draw_too_close.png);
+}
+.not_needed {
+    background-image: url('img/sleep_not_needed.png');
+}
+.specific {
+    background-image: url('img/sleep_needed_red.png');
+}
+.not_specific {
+    background-image: url('img/sleep_needed_blue.png');
+}
+.certain {
+    background-image: url('img/sleep_needed_dark.png');
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    body {
+        margin: 0;
+    }
+    .app {
+      max-width: 100%;
+    }
+    .small-col-0 {
+        width: 0;
+        padding: 0;
+    }   
+    .small-col-1 {
+        width: 20%;
+    }
+    .small-col-3 {
+        width: 49.5%;
+    }
+    .small-col-4 {
+        width: 63%;
+    }
+    .small-col-6 {
+        width: 100%;
+    }
+    .small-tal {
+        text-align: left;
+    }
+    .oddsblock {
+        padding: 0 2px;
+    }
+    .col {
+        padding: 1px;
+    }
+    div.icon {
+        background-size: 20px 20px;
+        line-height: 20px;
+    }
+    .icon-text {
+        line-height: 2em;
+    }
+    div.icon.tac {
+        padding-left: 25px;
+    }
+    .icon.icon-right {
+        padding-right: 20px;
+    }
+  }

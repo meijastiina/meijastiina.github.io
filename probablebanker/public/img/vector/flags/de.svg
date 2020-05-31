@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="74"
+   height="51"
+   viewBox="0 0 19.579167 13.493749"
+   version="1.1"
+   id="svg12215"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="de.svg">
+  <defs
+     id="defs12209" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="48.746979"
+     inkscape:cy="15.147929"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:showpageshadow="false"
+     showborder="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata12212">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-105.30417,-163.38542)">
+    <g
+       style="display:inline"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.6458293,116.025)"
+       id="germany"
+       inkscape:label="germany">
+      <rect
+         style="fill:#ed5565"
+         ry="0"
+         rx="0"
+         height="47"
+         width="70"
+         y="181"
+         x="410"
+         class="cls-1"
+         data-name="Rounded Rectangle 7 copy"
+         id="Rounded_Rectangle_7_copy-62" />
+      <rect
+         style="fill:#434a54;stroke-width:0.98952854"
+         height="15.666667"
+         width="70"
+         y="181"
+         x="410"
+         class="cls-2"
+         data-name="Rectangle 1 copy"
+         id="Rectangle_1_copy-14" />
+      <rect
+         style="fill:#f6bb42;stroke-width:0.98952854"
+         height="15.666667"
+         width="70"
+         y="212.33333"
+         x="410"
+         class="cls-9"
+         data-name="Rectangle 1 copy 8"
+         id="Rectangle_1_copy_8-10" />
+    </g>
+  </g>
+</svg>
