@@ -218,11 +218,11 @@ li.league a.active, .upcoming-link.active {
     width: 100%;
     float: left;
 }
-.game.row:hover {
+.game.row:hover .col {
     opacity: 0.7;
     cursor: pointer;
 }
-div.info div:hover, .game.row.header:hover {
+div.info div:hover, .game.row.header:hover, .game.row:hover .info .col {
     opacity: 1;
     cursor: default;
 }
