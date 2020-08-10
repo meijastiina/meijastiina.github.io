@@ -266,6 +266,7 @@ div.info div:hover, .game.row.header:hover, .game.row:hover .info .col {
     float: left;
     overflow: hidden; 
     white-space: nowrap;
+    text-overflow: ellipsis;
     width: 100%;
     padding: 0 10px;
     color: gainsboro;

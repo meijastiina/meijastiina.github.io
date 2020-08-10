@@ -1,14 +1,14 @@
 <template>
     <div class="games">
         <!-- Date changed -> show date header-->
-        <div class="game row" v-if="checkDate === true" @click.prevent="toggleGames" v-once>
+        <div class="date-header game row" v-if="checkDate === true" @click.prevent="toggleGames" v-once>
             <div class="col col-5 oddsblocks header">
                 <div class="oddsblock col-6 tac">{{ dateToBeShown }}</div>
             </div>
             <div class="col col-1"></div>
         </div>
         <!--<transition-group name="slide">-->
-            <div key="game._id">
+            <div class="game-container" key="game._id">
                 <div class="game row" @click.prevent="toggleInfo" v-if="checkToggled === true" :key="game._id">
                     <div class="col col-2 ">
                         <div class="col col-2 small-col-0"></div>
@@ -109,7 +109,7 @@
                                         <span>{{ game.block_13_mpp_tot_away }} %</span>
                                     </div>
                                 </template>
-                            </template>
+                             </template>
                             <template v-else >
                                 <div class="oddssubblockempty basicAway tac">
                                     <span>{{ "N/A" }}</span>
