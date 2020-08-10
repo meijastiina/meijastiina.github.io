@@ -1,5 +1,4 @@
 <template>
-<!--here-->
     <div class="games">
         <!-- Date changed -> show date header-->
         <div class="game row" v-if="checkDate === true" @click.prevent="toggleGames" v-once>
@@ -30,8 +29,7 @@
                             <div :class="['col', 'col-3', 'icon', 'icon-left', game.fullSafeTag]" :title="fullSafeInfoText"></div>
                         </div>
                     </div>
-                </div>  
-                <!-- Additional info -->
+                    <!-- Additional info -->
                 <!--<transition name="slide" mode="out-in">-->
                     <div class="info" v-show="toggled" key="info">
                         <!-- Burden / SLEEP NEEDED (icon) -->
@@ -60,50 +58,47 @@
                             </div>
                             <div class="col col-1"></div>
                         </div>
-                    <!-- Let's loop through additional info blocks -->
-                    <div v-for="block in blocks" v-bind:key="block.name">
-                        <div class="game row">
-                            <div class="col col-2 tar colSub colTextBackground">{{ block.name }}</div>
-                            <div class="col col-3 oddsblocks colBackground">
-                                <div class="oddssubblock basicHome" :style="{ width: block.home + '%' }" :title="block.home + ' %'">
-                                    <span>{{ block.home }} %</span>
+                        <!-- Let's loop through additional info blocks -->
+                        <div v-for="block in blocks" v-bind:key="block.name">
+                            <div class="game row">
+                                <div class="col col-2 tar colSub colTextBackground">{{ block.name }}</div>
+                                <div class="col col-3 oddsblocks colBackground">
+                                    <div class="oddssubblock basicHome" :style="{ width: block.home + '%' }" :title="block.home + ' %'">
+                                        <span>{{ block.home }} %</span>
+                                    </div>
+                                    <div class="oddssubblock basicDraw tac" :style="{ width: block.draw + '%' }" :title="block.draw + ' %'">
+                                        <span>{{ block.draw }} %</span>
+                                    </div>
+                                    <div class="oddssubblock basicAway tar" :style="{ width: block.away + '%' }" :title="block.away + ' %'">
+                                        <span>{{ block.away }} %</span>
+                                    </div>
                                 </div>
-                                <div class="oddssubblock basicDraw tac" :style="{ width: block.draw + '%' }" :title="block.draw + ' %'">
-                                    <span>{{ block.draw }} %</span>
-                                </div>
-                                <div class="oddssubblock basicAway tar" :style="{ width: block.away + '%' }" :title="block.away + ' %'">
-                                    <span>{{ block.away }} %</span>
-                                </div>
+                                <div class="col col-1"></div>
                             </div>
-                            <div class="col col-1"></div>
                         </div>
-                    </div>
-                    <!-- Additional info: Missing players -->
-                    <div class="game row"  >
-                        <div class="col col-2 tar colSub colTextBackground">Missing Players</div>
-                        <div class="col col-3 oddsblocks colBackground">
-                            <template v-if="game.containsMPP">
-                                <template v-if="game.containsLU">
-                                    <div class="oddssubblockmpptxt tac">
-                                        <span>{{ "Points based on actual lineup" }}</span>
-                                    </div>
-
-                                    <div class="oddssubblock basicHome" :style="{ width: game.block_13_lu_tot_home + '%' }">
-                                        <span>{{ game.block_13_lu_tot_home }} %</span>
-                                    </div>
-                                    <div class="oddssubblock basicDraw tac" :style="{ width: game.block_13_lu_tot_draw + '%' }">
-                                        <span>{{ game.block_13_lu_tot_draw }} %</span>
-                                    </div>
-                                    <div class="oddssubblock basicAway tar" :style="{ width: game.block_13_lu_tot_away + '%' }">
-                                        <span>{{ game.block_13_lu_tot_away }} %</span>
-                                    </div>
-
-                                </template>
+                        <!-- Additional info: Missing players -->
+                        <div class="game row"  >
+                            <div class="col col-2 tar colSub colTextBackground">Missing Players</div>
+                            <div class="col col-3 oddsblocks colBackground">
+                                <template v-if="game.containsMPP">
+                                    <template v-if="game.containsLU">
+                                        <div class="oddssubblockmpptxt tac">
+                                            <span>{{ "Points based on actual lineup" }}</span>
+                                        </div>
+                                        <div class="oddssubblock basicHome" :style="{ width: game.block_13_lu_tot_home + '%' }">
+                                            <span>{{ game.block_13_lu_tot_home }} %</span>
+                                        </div>
+                                        <div class="oddssubblock basicDraw tac" :style="{ width: game.block_13_lu_tot_draw + '%' }">
+                                            <span>{{ game.block_13_lu_tot_draw }} %</span>
+                                        </div>
+                                        <div class="oddssubblock basicAway tar" :style="{ width: game.block_13_lu_tot_away + '%' }">
+                                            <span>{{ game.block_13_lu_tot_away }} %</span>
+                                        </div>
+                                    </template>
                                 <template v-else >
                                     <div class="oddssubblockmpptxt tac">
                                         <span>{{ "Points based on predicted missing players" }}</span>
                                     </div>
-
                                     <div class="oddssubblock basicHome" :style="{ width: game.block_13_mpp_tot_home + '%' }">
                                         <span>{{ game.block_13_mpp_tot_home }} %</span>
                                     </div>
@@ -113,9 +108,7 @@
                                     <div class="oddssubblock basicAway tar" :style="{ width: game.block_13_mpp_tot_away + '%' }">
                                         <span>{{ game.block_13_mpp_tot_away }} %</span>
                                     </div>
-
                                 </template>
-                                
                             </template>
                             <template v-else >
                                 <div class="oddssubblockempty basicAway tac">
@@ -137,6 +130,8 @@
                         <div class="col col-1"></div>
                     </div>
                 </div>
+                </div>  
+                
             </div>
         <!--</transition-group>-->
     </div>

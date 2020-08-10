@@ -278,6 +278,7 @@ div.info div:hover, .game.row.header:hover {
 .info {
     background: darkgreen;
     float: left;
+    width: 100%;
 }
 .sticky {
     position: sticky;
